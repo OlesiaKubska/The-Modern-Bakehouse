@@ -1,0 +1,9 @@
+:root {
+    --color-primary-dark: #31261A;
+    --color-primary-light:#FAF4EA;
+    --color-accent: #819B57;
+}
+
+ul {
+    list-style-type: none;
+}
