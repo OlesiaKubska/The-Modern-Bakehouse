@@ -1,3 +1,35 @@
+@font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v22-latin-300.woff2') format('woff2'); 
+  }
+ 
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v22-latin-regular.woff2') format('woff2'); 
+  }
+  
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v22-latin-600.woff2') format('woff2'); 
+  }
+  
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v22-latin-900.woff2') format('woff2'); 
+  }
+
 :root {
     --color-primary-dark: #31261A;
     --color-primary-light:#FAF4EA;
@@ -112,4 +144,8 @@ button {
 
 .address-link:hover {
     color: var(--color-accent-light );
+}
+
+.address-text {
+    font-size: 14px;
 }
