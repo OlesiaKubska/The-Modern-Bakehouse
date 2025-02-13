@@ -39,6 +39,14 @@
     --color-secondary: #A18268; 
 }
 
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -60,6 +68,11 @@ button {
     cursor: pointer;
 }
 
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+}
 .header-link {
     color: var(--color-primary-light );
 }
@@ -69,6 +82,7 @@ button {
 }
 
 .header-button {
+    padding: 16px 32px;
     color: var(--color-primary-light );
     font-weight: 600;
     background-color: var(--color-accent-light );
@@ -81,6 +95,14 @@ button {
     background-color: transparent;
 }
 
+.section {
+    padding: 48px 0;
+}
+
+.hero-section{
+    padding: 272px o;
+}
+
 .hero-title {
     color: var(--color-primary-light );
     text-align: center;
@@ -89,6 +111,15 @@ button {
 
 .hero-title .accent {
     color: var(--color-accent-light );
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 .advantages-list {
@@ -102,12 +133,34 @@ button {
     line-height: 1.3;
 }
 
+.traditions-section {
+    padding-top: 96px;
+}
+
 .section-title .accent {
     color: var(--color-accent-dark );
 }
-.chefs-title{
+
+.traditions-title {
+    margin-bottom: 42px;
+}
+
+.chefs-title {
+    margin-bottom: 80px;
+}
+
+.chef-title{
+    margin-bottom: 16px;
     font-size: 40px;
     font-weight: 600;
+}
+
+.formats-title {
+    margin-bottom: 80px;
+}
+
+.format-title {
+    margin-bottom: 16px;
 }
 
 .formats-text {
@@ -115,7 +168,12 @@ button {
     font-weight: 300;
 }
 
+.contacts-title {
+    margin-bottom: 16px;
+}
+
 .form-button {
+    padding: 16px 32px;
     color: var(--color-primary-light );
     font-weight: 600;
     background-color: var(--color-accent-light );
@@ -140,6 +198,7 @@ button {
     color: var(--color-primary-light );
     font-size: 16px;
     font-weight: 300;
+    font-style: normal;
 }
 
 .address-link:hover {
@@ -148,4 +207,5 @@ button {
 
 .address-text {
     font-size: 14px;
+    font-style: normal;
 }
