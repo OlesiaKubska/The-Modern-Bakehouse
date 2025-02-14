@@ -10,26 +10,28 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="header-nav">
-          <a class="header-logo" href="/">
-            <img class="" src="./images/logo.svg" alt="logo" />
-          </a>
-          <ul class="header-list">
-            <li class="header-item">
-              <a class="header-link" href="#traditions-section">Traditions</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="#chefs-section">Chefs</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="#formats-section">Formats</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="#contacts-section">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="header-button" type="button">Request a Call</button>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a class="header-logo" href="/">
+              <img class="" src="./images/logo.svg" alt="logo" />
+            </a>
+            <ul class="header-menu">
+              <li class="header-item">
+                <a class="header-link" href="#traditions-section">Traditions</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="#chefs-section">Chefs</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="#formats-section">Formats</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="#contacts-section">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header-button" type="button">Request a Call</button>
+        </div>
       </div>
     </header>
     <main>
@@ -40,7 +42,7 @@
           </h1>
         </div>
       </section>
-      <section class="advantages-section section">
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Our advantages</h2>
           <ul class="advantages-list">
@@ -52,24 +54,32 @@
       </section>
       <section class="traditions-section section" id="traditions-section">
         <div class="container">
-          <h2 class="section-title traditions-title">
-            A new format of traditions
-          </h2>
-          <p class="traditions-text">
-            <span class="accent">shop bakery</span> is a bakery that has taken
-            the best of everything, preserving the taste of traditional pastries
-            and the natural quality of ingredients.
-          </p>
-          <p class="traditions-text">
-            We operate like the most famous chains—
-            <span class="accent">your order is ready in just 5 minutes.</span>
-            Plus, our bakeries feature stylish design and top-quality service!
-          </p>
-          <img
-            class="traditions-img"
-            src="./images/Mask group.jpg"
-            alt="Baker man"
-          />
+          <div class="traditions-container">
+            <div class="traditions-content">
+              <h2 class="section-title traditions-title">
+                A new format of traditions
+              </h2>
+              <p class="traditions-text">
+                <span class="brand uppercase">shop bakery</span> is a bakery
+                that has taken the best of everything, preserving the taste of
+                traditional pastries and the natural quality of ingredients.
+              </p>
+              <p class="traditions-text limited">
+                We operate like the most famous chains —
+                <span class="brand"
+                  >your order is ready in just 5 minutes.</span
+                >
+                Plus, our bakeries feature stylish design and top-quality
+                service!
+              </p>
+            </div>
+
+            <img
+              class="traditions-img"
+              src="./images/Mask group.jpg"
+              alt="Baker man"
+            />
+          </div>
         </div>
       </section>
       <section class="chefs-section section" id="chefs-section">
@@ -91,7 +101,7 @@
             </li>
             <li class="chefs-item">
               <article class="chefs-article">
-                <h3 class="chefs-title">Vlad</h3>
+                <h3 class="chef-title">Vlad</h3>
                 <p class="chefs-text">Hi, I'm Vlad!</p>
                 <p class="chefs-text">
                   I've been a pastry chef for 18 years. SHOP BAKERY is our

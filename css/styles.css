@@ -57,6 +57,8 @@ body {
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
@@ -73,6 +75,27 @@ button {
     max-width: 1288px;
     margin: 0 auto;
 }
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
 .header-link {
     color: var(--color-primary-light );
 }
@@ -122,27 +145,63 @@ button {
     overflow: hidden;
 }
 
-.advantages-list {
-    color: var(--color-primary-light );
+.advantages-section {
     background-color: var(--color-accent-light );
+    padding: 16px 0;
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .advantages-item {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.3;
+    color: var(--color-primary-light );
+}
+
+.section-title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+.section-title.accent {
+    color: var(--color-accent-dark );
 }
 
 .traditions-section {
     padding-top: 96px;
 }
 
-.section-title .accent {
-    color: var(--color-accent-dark );
+.traditions-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.traditions-content {
+    max-width: 710px;
 }
 
 .traditions-title {
     margin-bottom: 42px;
+}
+
+.traditions-text .brand {
+    color: var(--color-accent-light );
+    font-weight: 600;
+}
+
+.traditions-text .uppercase {
+    text-transform: uppercase;
+}
+
+.traditions-text.limited {
+    max-width: 340px;
 }
 
 .chefs-title {
@@ -155,12 +214,25 @@ button {
     font-weight: 600;
 }
 
+.formats-list {
+    display: flex;
+    gap: 20px;
+}
+
+.formats-card {
+    padding: 24px;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
 .formats-title {
     margin-bottom: 80px;
 }
 
 .format-title {
     margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .formats-text {
