@@ -287,6 +287,24 @@ button {
     font-weight: 300;
 }
 
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    fill: var(--color-primary-dark );
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary-dark );
+}
+
+.carousel-button:hover {
+    background-color: var(--color-primary-dark );
+    fill: var(--color-primary-light );
+}
+
 .contacts-title {
     margin-bottom: 16px;
 }
@@ -337,4 +355,12 @@ button {
 .address-text {
     font-size: 14px;
     font-style: normal;
+}
+
+.address-icon {
+    fill: var(--color-primary-light );
+}
+
+.address-icon:hover {
+    fill: var(--color-accent-light );
 }
