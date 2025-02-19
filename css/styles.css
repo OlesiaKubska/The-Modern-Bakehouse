@@ -220,16 +220,25 @@ button {
 }
 
 .chefs-title {
-    max-width: 460px;
+    position: relative;
     margin: 0 auto 80px;
 }
 
 .chefs-title::before,
 .chefs-title::after {
-    display: block;
+    position: absolute;
+    bottom: 20px;
     width: 352px;
     border: 2px solid var(--color-background-light );
     content: '';
+}
+
+.chefs-title::before {
+    left: 0;
+}
+
+.chefs-title::after {
+    right: 0;
 }
 
 .chefs-list {
@@ -363,6 +372,7 @@ button {
 }
 
 .footer {
+    position: relative;
     padding: 32px 0;
     background-color: var(--color-primary-dark );
     background-image: url(
@@ -371,6 +381,28 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+footer::before,
+footer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+}
+
+footer::before {
+    left: 0;
+    width: 180px;
+    height: 120px;
+    background-image: url(../images/bread.png);
+}
+
+footer::after {
+    right: 0;
+    width: 380px;
+    height: 190px;
+    background-image: url(../images/two-breads.png);
 }
 
 .footer-container {
@@ -387,11 +419,6 @@ button {
 
 .footer-logo,
 .footer-menu {
-    flex-grow: 1;
-}
-
-.address-list,
-.address-info {
     flex-grow: 1;
 }
 
@@ -418,6 +445,11 @@ button {
     color: var(--color-accent-light );
 }
 
+.address-list,
+.address-info {
+    flex-grow: 1;
+}
+
 .address-item {
     margin-bottom: 16px;
 }
@@ -439,4 +471,42 @@ button {
 
 .address-icon:hover {
     fill: var(--color-accent-light );
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: relative;
+    width: 880px;
+    height: 880px;
+    background-color: var(--color-primary-light );
+    border-radius: 32px;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    fill: var(--color-primary-dark );
+    background-color: transparent;
+    border: none;
 }
