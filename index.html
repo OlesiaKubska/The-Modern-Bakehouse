@@ -201,20 +201,59 @@
               <h2 class="section-title contacts-title">
                 Join our bakery network
               </h2>
-              <form class="form">
-                <p class="form-text">
-                  Fill out the form so we can get in touch with you!
-                </p>
-                <p class="form-text">Name</p>
-                <p class="form-text">Phone</p>
-                <p class="form-text">Email</p>
-                <button class="form-button" type="submit">
+              <form
+                name="contacts-form"
+                class="contacts-form"
+                autocomplete="off"
+              >
+                <div class="form-field">
+                  <label class="modal-label visually-hidden" for="user-name"
+                    >Name</label
+                  >
+                  <input
+                    class="modal-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Name"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="modal-label visually-hidden" for="user-tel"
+                    >Phone</label
+                  >
+                  <input
+                    class="modal-input"
+                    type="text"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Phone"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="modal-label visually-hidden" for="user-email"
+                    >Email</label
+                  >
+                  <input
+                    class="modal-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <button type="submit" class="form-button">
                   Request a Call
                 </button>
+                <p class="modal-text">
+                  By clicking the button, I agree to the
+                  <a href="#" class="modal-text-link"> Privacy Policy.</a>
+                </p>
               </form>
-              <p class="contacts-text">
-                By clicking the button, I agree to the Privacy Policy.
-              </p>
+              <p class="contacts-text"></p>
             </div>
             <iframe
               class="contacts-map"
@@ -305,9 +344,63 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2>Request a call</h2>
+        <p>Leave a request, and our specialist will contact you!</p>
+        <form
+          name="modal-form"
+          class="modal-form"
+          autocomplete="off"
+          novalidate
+        >
+          <div class="form-field">
+            <label class="modal-label visually-hidden" for="user-name"
+              >Name</label
+            >
+            <input
+              class="modal-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Name"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="modal-label visually-hidden" for="user-tel"
+              >Phone</label
+            >
+            <input
+              class="modal-input"
+              type="text"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Phone"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="modal-label visually-hidden" for="user-email"
+              >Email</label
+            >
+            <input
+              class="modal-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Email"
+            />
+          </div>
+
+          <button type="submit" class="form-button">Request a Call</button>
+          <p class="modal-text">
+            By clicking the button, I agree to the
+            <a href="#" class="modal-text-link"> Privacy Policy.s</a>
+          </p>
+        </form>
       </div>
     </div>
 

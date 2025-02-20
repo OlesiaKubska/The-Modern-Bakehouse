@@ -520,6 +520,7 @@ footer::after {
     max-height: 880px;
     background-color: var(--color-primary-light );
     border-radius: 32px;
+    overflow: auto;
 }
 
 .modal-btn-close {
@@ -532,4 +533,80 @@ footer::after {
     fill: var(--color-primary-dark );
     background-color: transparent;
     border: none;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.form-field {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.modal-label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+    color: var(--color-secondary );
+}
+
+.modal-input {
+    padding: 16px 42px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.17;
+    border: 1px solid var(--color-secondary );
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.modal-input:focus {
+    outline: none;
+    border-color: var(--color-accent-dark );
+}
+
+.modal-input::placeholder {
+    color: var(--color-accent-dark );
+    font-size: 16px;
+    line-height: 1.17;
+}
+
+.modal-input:focus::placeholder {
+    color: var(--color-primary-dark );
+}
+
+.form-button {
+    padding: 16px 42px;
+    display: block;
+    margin: 0 auto 24px;
+    color: var(--color-primary-light );
+    font-weight: 600;
+    background-color: var(--color-accent-light );
+    border: 2px solid var(--color-accent-light );
+    border-radius: 8px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.form-button:hover {
+    color: var(--color-accent-dark );
+    background-color: transparent;
+}
+
+.modal-text {
+    max-width: 210px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--color-primary-dark );
+}
+
+.modal-text-link {
+    color: var(--color-primary-darks );
+    text-underline-offset: 2px;
+    text-decoration: underline;
 }
