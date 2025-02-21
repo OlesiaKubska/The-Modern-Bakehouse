@@ -207,11 +207,11 @@
                 autocomplete="off"
               >
                 <div class="form-field">
-                  <label class="modal-label visually-hidden" for="user-name"
+                  <label class="form-label visually-hidden" for="user-name"
                     >Name</label
                   >
                   <input
-                    class="modal-input"
+                    class="form-input"
                     type="text"
                     name="user-name"
                     id="user-name"
@@ -220,11 +220,11 @@
                 </div>
 
                 <div class="form-field">
-                  <label class="modal-label visually-hidden" for="user-tel"
+                  <label class="form-label visually-hidden" for="user-tel"
                     >Phone</label
                   >
                   <input
-                    class="modal-input"
+                    class="form-input"
                     type="text"
                     name="user-tel"
                     id="user-tel"
@@ -233,11 +233,11 @@
                 </div>
 
                 <div class="form-field">
-                  <label class="modal-label visually-hidden" for="user-email"
+                  <label class="form-label visually-hidden" for="user-email"
                     >Email</label
                   >
                   <input
-                    class="modal-input"
+                    class="form-input"
                     type="email"
                     name="user-email"
                     id="user-email"
@@ -248,9 +248,9 @@
                 <button type="submit" class="form-button">
                   Request a Call
                 </button>
-                <p class="modal-text">
+                <p class="form-text">
                   By clicking the button, I agree to the
-                  <a href="#" class="modal-text-link"> Privacy Policy.</a>
+                  <a href="#" class="form-text-link"> Privacy Policy.</a>
                 </p>
               </form>
               <p class="contacts-text"></p>
@@ -348,57 +348,63 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
-        <h2>Request a call</h2>
-        <p>Leave a request, and our specialist will contact you!</p>
-        <form
-          name="modal-form"
-          class="modal-form"
-          autocomplete="off"
-          novalidate
-        >
+        <h2 class="section-title form-title">Request a call</h2>
+        <p class="form-text-prev">
+          Leave a request, and our specialist will contact you!
+        </p>
+        <form name="modal-form" class="modal-form" autocomplete="off">
           <div class="form-field">
-            <label class="modal-label visually-hidden" for="user-name"
+            <label class="form-label visually-hidden" for="user-name"
               >Name</label
             >
             <input
-              class="modal-input"
+              class="form-input"
               type="text"
               name="user-name"
               id="user-name"
               placeholder="Name"
+              required
+              pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє']{2,}\s[A-Za-zА-Яа-яЁёІіЇїЄє']{2,}$"
+              title="Enter first and last name separated by a space"
             />
           </div>
 
           <div class="form-field">
-            <label class="modal-label visually-hidden" for="user-tel"
+            <label class="form-label visually-hidden" for="user-tel"
               >Phone</label
             >
             <input
-              class="modal-input"
-              type="text"
+              class="form-input"
+              type="tel"
               name="user-tel"
               id="user-tel"
               placeholder="Phone"
+              required
+              pattern="^\+380\d{9}$"
+              title="Enter a phone number in the format +380XXXXXXXXX"
             />
           </div>
 
           <div class="form-field">
-            <label class="modal-label visually-hidden" for="user-email"
+            <label class="form-label visually-hidden" for="user-email"
               >Email</label
             >
             <input
-              class="modal-input"
+              class="form-input"
               type="email"
               name="user-email"
               id="user-email"
               placeholder="Email"
+              required
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              title="Enter a valid email address"
             />
           </div>
 
           <button type="submit" class="form-button">Request a Call</button>
-          <p class="modal-text">
+          <p class="form-text">
             By clicking the button, I agree to the
-            <a href="#" class="modal-text-link"> Privacy Policy.s</a>
+            <a href="#" class="form-text-link"> Privacy Policy.s</a>
           </p>
         </form>
       </div>
