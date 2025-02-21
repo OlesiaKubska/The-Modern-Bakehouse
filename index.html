@@ -216,6 +216,10 @@
                     name="user-name"
                     id="user-name"
                     placeholder="Name"
+                    placeholder="Name"
+                    required
+                    pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє']{2,}\s[A-Za-zА-Яа-яЁёІіЇїЄє']{2,}$"
+                    title="Enter first and last name separated by a space"
                   />
                 </div>
 
@@ -229,6 +233,9 @@
                     name="user-tel"
                     id="user-tel"
                     placeholder="Phone"
+                    required
+                    pattern="^\+380\d{9}$"
+                    title="Enter a phone number in the format +380XXXXXXXXX"
                   />
                 </div>
 
@@ -242,6 +249,9 @@
                     name="user-email"
                     id="user-email"
                     placeholder="Email"
+                    required
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="Enter a valid email address"
                   />
                 </div>
 
