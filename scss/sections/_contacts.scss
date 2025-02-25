@@ -1,11 +1,33 @@
-.contacts-container {
-    display: flex;
-    gap: 32px;
+.contacts-section {
+    padding-bottom: 96px;
+
+    &__container {
+        display: flex;
+        gap: 32px;
+    }
+    
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__form-field {
+        margin-bottom: 24px;
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto 16px;
+    }
+
+    &__map {
+        flex-shrink: 0;
+        border: none;
+        border-radius: 16px;
+    }
 }
 
-.contacts-title {
-    margin-bottom: 16px;
-}
+
+
 
 .form-button {
     padding: 16px 32px;
@@ -21,12 +43,5 @@
     background-color: transparent;
 }
 
-.contacts-section {
-    padding-bottom: 96px;
-}
 
-.contacts-map {
-    flex-shrink: 0;
-    border: none;
-    border-radius: 16px;
-}
+

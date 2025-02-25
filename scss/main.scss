@@ -4,24 +4,51 @@
 
 @import './base/reset';
 
+@import './base/texts';
+
 @import './base/globals';
 
 @import './base/utils';
 
-@import './layout/header';
+@import './components/buttons';
+
+@import './components/carousel';
+
+@import './components/chefs-card';
+
+@import './components/formats-card';
+
+@import './components/input';
+
+@import './components/links';
+
+@import './components/social';
 
 @import './layout/footer';
 
-@import './sections/hero';
+@import './layout/header';
+
+@import './layout/modal';
+
+@import './layout/sections';
+
+@import './layout/terms';
 
 @import './sections/advantages';
 
-@import './sections/traditions';
-
 @import './sections/chefs';
-
-@import './sections/formats';
 
 @import './sections/contacts';
 
-@import './components/modal';
+@import './sections/formats';
+
+@import './sections/hero';
+
+@import './sections/traditions';
+
+
+
+
+
+
+
