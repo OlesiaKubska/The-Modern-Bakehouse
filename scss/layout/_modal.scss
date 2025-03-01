@@ -40,6 +40,10 @@
         fill: var(--color-primary-dark );
         background-color: transparent;
         border: none;
+
+        &:hover {
+            fill: var(--color-accent-dark);
+        }
     }
 
     &__form {
