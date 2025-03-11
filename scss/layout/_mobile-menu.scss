@@ -11,4 +11,19 @@
     &.is-open {
         transform: translateX(0);
     }
+
+    &__btn-close {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        background: transparent;
+        border: none;
+        padding: 8px;
+        stroke: var(--color-primary-dark );
+        transition: stroke 0.3s;
+        
+        &:hover {
+            stroke: var(--color-accent-dark);
+        }
+    }
 }

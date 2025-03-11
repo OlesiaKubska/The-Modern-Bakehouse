@@ -13,7 +13,7 @@
         <div class="header__container">
           <nav class="header__nav">
             <a href="/">
-              <img class="" src="./images/logo.svg" alt="logo" />
+              <img class="header__logo" src="./images/logo.svg" alt="logo" />
             </a>
             <ul class="header__menu">
               <li>
@@ -39,7 +39,11 @@
             </svg>
           </button>
           <div class="mobile-menu">
-            <button type="button" class="menu-btn-close">Close</button>
+            <button type="button" class="mobile-menu__btn-close menu-btn-close">
+              <svg class="mobile-menu__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -50,6 +54,12 @@
           <h1 class="hero-section__title">
             <span class="text-accent">The modern </span> bakehouse
           </h1>
+          <button
+            class="hero-section__button button modal-btn-open"
+            type="button"
+          >
+            Request a Call
+          </button>
         </div>
       </section>
       <section class="advantages-section">
@@ -71,7 +81,7 @@
               <h2 class="section__title traditions-section__title">
                 A new format of traditions
               </h2>
-              <p>
+              <p class="traditions-section__text">
                 <span class="text-accent text-bold text-uppercase"
                   >shop bakery</span
                 >
@@ -82,7 +92,7 @@
               <p
                 class="traditions-section__text traditions-section__text--limited"
               >
-                We operate like the most famous chains —
+                We operate like the most famous chains — <br />
                 <span class="text-accent text-bold">
                   your order is ready in just 5 minutes.</span
                 >
@@ -94,7 +104,8 @@
 
             <img
               class="traditions-section__img"
-              src="./images/Mask group.jpg"
+              srcset="./images/mask.jpg 1x, ./images/mask@2x.jpg 2x"
+              src="./images/mask.jpg"
               alt="Baker man"
             />
           </div>
@@ -460,5 +471,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
