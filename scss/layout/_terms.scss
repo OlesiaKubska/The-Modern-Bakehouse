@@ -1,15 +1,21 @@
 .form-terms {
-    max-width: 210px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
-    text-align: center;
-    margin: 0 auto;
-    color: var(--color-primary-dark );
+    display: none;
 
-    &__link {
-        color: var(--color-primary-darks );
-        text-underline-offset: 2px;
-        text-decoration: underline;
+    @media screen and (min-width: $bp-tablet) {
+        display: block;
+        max-width: 210px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 auto;
+        color: var(--color-primary-dark );
+
+        &__link {
+            color: var(--color-primary-darks );
+            text-underline-offset: 2px;
+            text-decoration: underline;
+        }
     }
+    
 }
