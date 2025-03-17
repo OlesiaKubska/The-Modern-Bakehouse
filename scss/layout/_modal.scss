@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 0;
+    padding: 20px;
     transition: opacity 0.3s visibility 0.3s;
 
     &.is-hidden {
@@ -27,20 +27,88 @@
     background-color: var(--color-primary-light );
     border-radius: 32px;
     overflow: auto;
-    padding: 128px;
+    padding: 48px;
     text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 98px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 128px;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &::before {
+        right: 20px;
+        bottom: -50px;
+        width: 80px;
+        height: 194px;
+        background-image: url(../images/modal-bread.png);
+        background-size: contain;
+        transform: rotate(-10deg);
+
+        @media screen and (min-width: $bp-tablet) {
+            right: 0;
+            bottom: -60px;
+            width: 90px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            right: 40px;
+            bottom: -24px;
+            width: 126px;
+            height: 254px;
+        }
+    }
+
+    &::after {
+        right: 20px;
+        bottom: 20px;
+        width: 90px;
+        height: 90px;
+        background-image: url(../images/circle-text.png);
+        background-size: contain;
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 100px;
+            height: 100px;
+            right: 0;
+            bottom: 0;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 136px;
+            height: 136px;
+            right: 40px;
+            bottom: 40px;
+        }
+    }
 
     &__btn-close {
         position: absolute;
         top: 40px;
         right: 40px;
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
         padding: 0;
         stroke: var(--color-primary-dark );
         background-color: transparent;
         border: none;
         transition: stroke 0.3s;
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 32px;
+            height: 32px;
+        }
 
         &:hover {
             stroke: var(--color-accent-dark);
@@ -59,11 +127,23 @@
     
     &__text-prev {
         color: var(--color-accent-dark );
-        margin-bottom: 72px;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 58px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 72px;
+        }
     }
 
     &__form-field {
-        margin-bottom: 32px;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 32px;
+        }
     }
 
     &__button {
