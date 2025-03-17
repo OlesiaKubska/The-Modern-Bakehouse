@@ -12,6 +12,37 @@
         transform: translateX(0);
     }
 
+    &__container {
+        position: relative;
+        max-height: 640px;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+
+    &::before {
+        right: 0;
+        bottom: -180px;
+        width: 180px;
+        height: 240px;
+        background-image: url(../images/modal-bread.png);
+        background-size: contain;
+        transform: rotate(-10deg);
+    }
+
+    &::after {
+        right: 0;
+        bottom: auto;
+        width: 180px;
+        height: 240px;
+        background-image: url(../images/circle-text.png);
+        background-size: contain;
+    }
+    }
+
     &__btn-close {
         position: absolute;
         top: 16px;
@@ -24,6 +55,53 @@
         
         &:hover {
             stroke: var(--color-accent-dark);
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 24px;
+
+        @media screen and (min-width: $bp-tablet) {
+            padding: 24px 40px;
+        }
+    }
+
+    &__logo {
+        max-width: 72px;
+        height: auto;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: $bp-tablet) {
+            max-width: 98px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+        margin: 0;
+
+        @media screen and (min-width: $bp-tablet) {
+            gap: 20px;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        color: var(--color-primary-dark);
+        transition: color 0.3s;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 16px;
+        }
+
+        &:hover,
+        &.active {
+            color: var(--color-accent-light);
         }
     }
 }
